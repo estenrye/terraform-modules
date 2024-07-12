@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.10.7/.schema/devbox.schema.json",
+  "packages": [
+    "git@2.45.2",
+    "python@3.12.4",
+    "pipenv@2023.10.24",
+    "terraform@1.8.5",
+    "terragrunt@0.59.6",
+    "tflint@0.51.2",
+    "tfsec@1.28.9",
+    "checkov@3.2.171",
+    "aws@2019.06.18",
+    "saml2aws@2.36.16",
+    "_1password@2.29.0",
+    "shellcheck@0.10.0"
+  ],
+  "env": {
+    "VENV_DIR": ".venv"
+  },
+  "shell": {
+    "init_hook": [
+      "echo Welcome to devbox!",
+      "source .devbox/virtenv/python/.virtenv",
+      "pipenv shell",
+      "pre-commit install"
+    ],
+    "scripts": {
+      "install-hooks": [
+        "pre-commit install"
+      ],
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}
