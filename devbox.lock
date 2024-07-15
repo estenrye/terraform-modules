@@ -233,6 +233,60 @@
         }
       }
     },
+    "goimports@2021-01-13": {
+      "last_modified": "2022-02-15T04:21:50Z",
+      "resolved": "github:NixOS/nixpkgs/3a641defd170a4ef25ce8c7c64cb13f91f867fca#goimports",
+      "source": "devbox-search",
+      "version": "2021-01-13"
+    },
+    "golint@2020-12-08": {
+      "last_modified": "2024-07-07T07:43:47Z",
+      "resolved": "github:NixOS/nixpkgs/b60793b86201040d9dee019a05089a9150d08b5b#golint",
+      "source": "devbox-search",
+      "version": "2020-12-08",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/549r56iawg6q9lsv3ib8yn7fln7n4gkm-golint-unstable-2020-12-08",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/549r56iawg6q9lsv3ib8yn7fln7n4gkm-golint-unstable-2020-12-08"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/5s7h6xb9ha9sazqzf0xvs2i76zlmm66b-golint-unstable-2020-12-08",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/5s7h6xb9ha9sazqzf0xvs2i76zlmm66b-golint-unstable-2020-12-08"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/cxkvckbxrgjhad3a7dw21lag9m4bhkyg-golint-unstable-2020-12-08",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/cxkvckbxrgjhad3a7dw21lag9m4bhkyg-golint-unstable-2020-12-08"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/9jsg4kw1a575c1f4bqdxcgyfyj87fd6x-golint-unstable-2020-12-08",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/9jsg4kw1a575c1f4bqdxcgyfyj87fd6x-golint-unstable-2020-12-08"
+        }
+      }
+    },
     "pipenv@2023.10.24": {
       "last_modified": "2024-07-07T16:08:25Z",
       "resolved": "github:NixOS/nixpkgs/ab82a9612aa45284d4adf69ee81871a389669a9e#pipenv",
