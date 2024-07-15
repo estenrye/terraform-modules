@@ -1,6 +1,6 @@
 # terraform-modules
 
-# Development Environment Setup
+## Development Environment Setup
 
 To setup your development environment, you will need to install devbox. Devbox is a tool that will help you setup your development environment with all the necessary tools and dependencies.
 
@@ -15,3 +15,6 @@ devbox shell
 devbox run install-hooks
 ```
 
+## Documentation for Development Tooling
+
+- [Gruntwork: precommit hooks](https://github.com/gruntwork-io/pre-commit
