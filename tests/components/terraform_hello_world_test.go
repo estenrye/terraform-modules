@@ -1,3 +1,5 @@
+//go:build unit || components || terraform_hello_world
+
 package test
 
 import (
