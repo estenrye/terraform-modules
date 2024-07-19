@@ -14,7 +14,8 @@
     "_1password@2.29.0",
     "shellcheck@0.10.0",
     "golint@2020-12-08",
-    "goimports@2021-01-13"
+    "goimports@2021-01-13",
+    "go@1.22.5"
   ],
   "env": {
     "VENV_DIR": ".venv"
@@ -28,7 +29,11 @@
     ],
     "scripts": {
       "install-hooks": [
+        "terraform fmt --recursive",
         "pre-commit install"
+      ],
+      "lint": [
+        "pre-commit run --all-files"
       ],
       "test": [
         "echo \"Error: no test specified\" && exit 1"

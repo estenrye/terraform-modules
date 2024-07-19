@@ -1,17 +1,17 @@
-variable "ou_name" {
-  type        = string
-  description = "The name of the organizational unit to place the account in"
-}
-
-variable "account_name" {
+variable "name" {
   type        = string
   description = "The name of the account"
 }
 
-variable "parent_ou_id" {
+variable "parent_ou_path" {
   type        = string
-  description = "The id of the parent organizational unit to search for the organizational unit"
-  default     = null
+  description = "The path of the parent organizational unit to place the organizational unit"
+  default     = "Root"
+
+  validation {
+    condition     = length(split("/", var.parent_ou_path)) <= 6 && substr(var.parent_ou_path, 0, 4) == "Root"
+    error_message = "Parent OU Path cannot have a hierarchy depth greater than 6, starting with \"Root/\"."
+  }
 }
 
 variable "tags" {
