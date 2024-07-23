@@ -1,11 +1,3 @@
-output "ou_e_id" {
-  value = module.ou_e.id
-}
-
-output "ou_e_arn" {
-  value = module.ou_e.arn
-}
-
 output "name" {
   value = module.account.name
 }

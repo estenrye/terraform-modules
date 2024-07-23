@@ -13,14 +13,17 @@ import (
 )
 
 func TestAWSOrganizationAccount(t *testing.T) {
+	emailPrefix := "test-user"
+	emailDomain := "ryezone.com"
+	accountName := fmt.Sprintf("tf-mods-aws-org-account-test-%s", strings.ToLower(random.UniqueId()))
+
 	terraformOptions := &terraform.Options{
 		// The path to where our Terraform code is located
 		TerraformDir: "../../examples/components/aws_organization_account",
 		Vars: map[string]interface{}{
-			"account_name": fmt.Sprintf("terraform-modules-examples-test-%s", strings.ToLower(random.UniqueId())),
-			"ou_name":      "root",
-			"email_prefix": "esten.rye",
-			"email_domain": "ryezone.com",
+			"account_name": accountName,
+			"email_prefix": emailPrefix,
+			"email_domain": emailDomain,
 			"tags": map[string]string{
 				"environment": "test",
 				"project":     "terraform-modules-examples",
@@ -34,6 +37,14 @@ func TestAWSOrganizationAccount(t *testing.T) {
 	// This will run `terraform init` and `terraform apply`. It will also output the Terraform logs to the console.
 	terraform.InitAndApply(t, terraformOptions)
 
-	output := terraform.Output(t, terraformOptions, "message")
-	assert.Equal(t, "Hello, World! This is a test!", output)
+	parentOuID := terraform.Output(t, terraformOptions, "parent_ou_id")
+	assert.Equal(t, "ou-p54p-t67gb0qa", parentOuID)
+
+	name := terraform.Output(t, terraformOptions, "name")
+	assert.Equal(t, accountName, name)
+
+	email := terraform.Output(t, terraformOptions, "email")
+	expectedEmail := fmt.Sprintf("%s+%s@%s", emailPrefix, accountName, emailDomain)
+	assert.Equal(t, expectedEmail, email)
+
 }

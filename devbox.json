@@ -23,8 +23,7 @@
   "shell": {
     "init_hook": [
       "echo Welcome to devbox!",
-      "source .devbox/virtenv/python/.virtenv",
-      "pipenv shell",
+      ". $VENV_DIR/bin/activate",
       "pre-commit install"
     ],
     "scripts": {
@@ -35,8 +34,11 @@
       "lint": [
         "pre-commit run --all-files"
       ],
-      "test": [
-        "echo \"Error: no test specified\" && exit 1"
+      "test-components": [
+        "echo 'GO_TEST_TAGS:'",
+        "echo $GO_TEST_TAGS",
+        "cd tests/components",
+        "go test -v -tags $GO_TEST_TAGS"
       ]
     }
   }
