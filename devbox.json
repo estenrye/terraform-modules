@@ -24,6 +24,7 @@
     "init_hook": [
       "echo Welcome to devbox!",
       ". $VENV_DIR/bin/activate",
+      "source .env",
       "pre-commit install"
     ],
     "scripts": {

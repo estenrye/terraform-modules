@@ -18,3 +18,7 @@
 - [Github: aws-samples/aws-control-tower-account-setup-using-step-functions](https://github.com/aws-samples/aws-control-tower-account-setup-using-step-functions)
 - [Github: aws-samples/aws-security-reference-architecture-examples](https://github.com/aws-samples/aws-security-reference-architecture-examples)
 - [aws-samples/aws-terraform-pipeline](https://github.com/aws-samples/aws-terraform-pipeline/blob/main/README.md)
+
+## AWS Identity Center
+- [Github: terrafrom-aws-iam-identity-center Provider](https://github.com/aws-ia/terraform-aws-iam-identity-center)
+- [AWS: Identity Center: Prerequisites](https://docs.aws.amazon.com/singlesignon/latest/userguide/get-started-prereqs-considerations.html)
