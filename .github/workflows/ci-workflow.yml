@@ -45,7 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Terraform Linting Rules
-        uses: estenrye/tf-checkov-composite-action@v1.0.1
+        uses: estenrye/tf-checkov-composite-action@v1.0.21
 
 #   tf-plan:
 #     name: Plan Terraform Changes
