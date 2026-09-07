@@ -285,7 +285,18 @@
       "last_modified": "2022-02-15T04:21:50Z",
       "resolved": "github:NixOS/nixpkgs/3a641defd170a4ef25ce8c7c64cb13f91f867fca#goimports",
       "source": "devbox-search",
-      "version": "2021-01-13"
+      "version": "2021-01-13",
+      "systems": {
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "01-13",
+              "path": "/tmp/containerbase/cache/nix/store/jb9p8hssndc9y76nk43wdh2m8wxiry0l-gotools-unstable-2021-01-13",
+              "default": true
+            }
+          ]
+        }
+      }
     },
     "golint@2020-12-08": {
       "last_modified": "2024-07-07T07:43:47Z",
@@ -401,7 +412,7 @@
     },
     "python@3.12.4": {
       "last_modified": "2024-07-07T16:08:25Z",
-      "plugin_version": "0.0.3",
+      "plugin_version": "0.0.5",
       "resolved": "github:NixOS/nixpkgs/ab82a9612aa45284d4adf69ee81871a389669a9e#python3",
       "source": "devbox-search",
       "version": "3.12.4",
@@ -752,51 +763,51 @@
         }
       }
     },
-    "tfsec@1.28.9": {
-      "last_modified": "2024-07-07T16:08:25Z",
-      "resolved": "github:NixOS/nixpkgs/ab82a9612aa45284d4adf69ee81871a389669a9e#tfsec",
+    "tfsec@1.28.14": {
+      "last_modified": "2026-08-27T07:16:00Z",
+      "resolved": "github:NixOS/nixpkgs/c27cdad491a991b11ed731760aa2ef8db0cb0410#tfsec",
       "source": "devbox-search",
-      "version": "1.28.9",
+      "version": "1.28.14",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/c22cf2mqxnjda8g40ps619swwxhwbbhv-tfsec-1.28.9",
+              "path": "/nix/store/xy5g0737s69ryxdbp02ahzcmyf7sbm46-tfsec-1.28.14",
               "default": true
             }
           ],
-          "store_path": "/nix/store/c22cf2mqxnjda8g40ps619swwxhwbbhv-tfsec-1.28.9"
+          "store_path": "/nix/store/xy5g0737s69ryxdbp02ahzcmyf7sbm46-tfsec-1.28.14"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/mm1y4y21inxi8i092dr1xcq515xf3fw7-tfsec-1.28.9",
+              "path": "/nix/store/95sr33vr8ypp13kqj9wzfly42djg5r8r-tfsec-1.28.14",
               "default": true
             }
           ],
-          "store_path": "/nix/store/mm1y4y21inxi8i092dr1xcq515xf3fw7-tfsec-1.28.9"
+          "store_path": "/nix/store/95sr33vr8ypp13kqj9wzfly42djg5r8r-tfsec-1.28.14"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/mpsfdipcywlqmn1fx19imlyp8d9b7739-tfsec-1.28.9",
+              "path": "/nix/store/h8xrfzjv08v16pxxc7l3xwj6n7rr82kx-tfsec-1.28.14",
               "default": true
             }
           ],
-          "store_path": "/nix/store/mpsfdipcywlqmn1fx19imlyp8d9b7739-tfsec-1.28.9"
+          "store_path": "/nix/store/h8xrfzjv08v16pxxc7l3xwj6n7rr82kx-tfsec-1.28.14"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/0vjhm16iv5yc2nbz7pk3aj9302j6vz11-tfsec-1.28.9",
+              "path": "/nix/store/xjwy348c4cph9icwqk24h3x5x68j4fy9-tfsec-1.28.14",
               "default": true
             }
           ],
-          "store_path": "/nix/store/0vjhm16iv5yc2nbz7pk3aj9302j6vz11-tfsec-1.28.9"
+          "store_path": "/nix/store/xjwy348c4cph9icwqk24h3x5x68j4fy9-tfsec-1.28.14"
         }
       }
     }
