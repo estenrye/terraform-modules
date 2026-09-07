@@ -285,7 +285,18 @@
       "last_modified": "2022-02-15T04:21:50Z",
       "resolved": "github:NixOS/nixpkgs/3a641defd170a4ef25ce8c7c64cb13f91f867fca#goimports",
       "source": "devbox-search",
-      "version": "2021-01-13"
+      "version": "2021-01-13",
+      "systems": {
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "01-13",
+              "path": "/tmp/containerbase/cache/nix/store/jb9p8hssndc9y76nk43wdh2m8wxiry0l-gotools-unstable-2021-01-13",
+              "default": true
+            }
+          ]
+        }
+      }
     },
     "golint@2020-12-08": {
       "last_modified": "2024-07-07T07:43:47Z",
@@ -401,7 +412,7 @@
     },
     "python@3.12.4": {
       "last_modified": "2024-07-07T16:08:25Z",
-      "plugin_version": "0.0.3",
+      "plugin_version": "0.0.5",
       "resolved": "github:NixOS/nixpkgs/ab82a9612aa45284d4adf69ee81871a389669a9e#python3",
       "source": "devbox-search",
       "version": "3.12.4",
@@ -456,51 +467,51 @@
         }
       }
     },
-    "saml2aws@2.36.16": {
-      "last_modified": "2024-07-07T16:08:25Z",
-      "resolved": "github:NixOS/nixpkgs/ab82a9612aa45284d4adf69ee81871a389669a9e#saml2aws",
+    "saml2aws@2.36.19": {
+      "last_modified": "2026-08-27T07:16:00Z",
+      "resolved": "github:NixOS/nixpkgs/c27cdad491a991b11ed731760aa2ef8db0cb0410#saml2aws",
       "source": "devbox-search",
-      "version": "2.36.16",
+      "version": "2.36.19",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/ppd5xvz2bfpp9q3pvd5kfi7ga6szky9s-saml2aws-2.36.16",
+              "path": "/nix/store/z83d653zsxfdyfmgc1sx82rxfyg3pwzi-saml2aws-2.36.19",
               "default": true
             }
           ],
-          "store_path": "/nix/store/ppd5xvz2bfpp9q3pvd5kfi7ga6szky9s-saml2aws-2.36.16"
+          "store_path": "/nix/store/z83d653zsxfdyfmgc1sx82rxfyg3pwzi-saml2aws-2.36.19"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/nnp5xsdhrxhf9d4ksy8wds6vxx5dfab7-saml2aws-2.36.16",
+              "path": "/nix/store/j46bk8dm61kmxhvcxhb1gwcs02fs28b2-saml2aws-2.36.19",
               "default": true
             }
           ],
-          "store_path": "/nix/store/nnp5xsdhrxhf9d4ksy8wds6vxx5dfab7-saml2aws-2.36.16"
+          "store_path": "/nix/store/j46bk8dm61kmxhvcxhb1gwcs02fs28b2-saml2aws-2.36.19"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/2jq0gkggvmj0z78fwzg7yfm39jji2km6-saml2aws-2.36.16",
+              "path": "/nix/store/bvn41hpn01v28lxv433hp2qkgbiaibpx-saml2aws-2.36.19",
               "default": true
             }
           ],
-          "store_path": "/nix/store/2jq0gkggvmj0z78fwzg7yfm39jji2km6-saml2aws-2.36.16"
+          "store_path": "/nix/store/bvn41hpn01v28lxv433hp2qkgbiaibpx-saml2aws-2.36.19"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/bsm3p8vy0pas1sn4j9i7ns4xyza9jcsj-saml2aws-2.36.16",
+              "path": "/nix/store/4224wsp4f5vjj2bdacn9ls11mzbyk34g-saml2aws-2.36.19",
               "default": true
             }
           ],
-          "store_path": "/nix/store/bsm3p8vy0pas1sn4j9i7ns4xyza9jcsj-saml2aws-2.36.16"
+          "store_path": "/nix/store/4224wsp4f5vjj2bdacn9ls11mzbyk34g-saml2aws-2.36.19"
         }
       }
     },
