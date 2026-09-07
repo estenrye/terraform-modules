@@ -8,7 +8,7 @@
     "terragrunt@0.59.6",
     "tflint@0.51.2",
     "tfsec@1.28.9",
-    "checkov@3.2.171",
+    "checkov@3.3.9",
     "aws@2019.06.18",
     "saml2aws@2.36.16",
     "_1password@2.29.0",
