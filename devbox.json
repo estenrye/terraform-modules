@@ -7,7 +7,7 @@
     "terraform@1.8.5",
     "terragrunt@0.59.6",
     "tflint@0.51.2",
-    "tfsec@1.28.9",
+    "tfsec@1.28.14",
     "checkov@3.2.171",
     "aws@2019.06.18",
     "saml2aws@2.36.16",
