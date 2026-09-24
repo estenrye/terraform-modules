@@ -10,7 +10,7 @@
     "tfsec@1.28.9",
     "checkov@3.2.171",
     "aws@2019.06.18",
-    "saml2aws@2.36.16",
+    "saml2aws@2.36.19",
     "_1password@2.29.0",
     "shellcheck@0.10.0",
     "golint@2020-12-08",
